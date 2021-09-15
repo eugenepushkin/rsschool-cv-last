@@ -1,7 +1,7 @@
 
 # Yauheni Pushkin
 
-#### Junior Frontend Developer
+#### __Junior__ Frontend Developer
 
 ---
 
