@@ -1,1 +1,0 @@
-https://eugenepushkin.github.io/rsschool-cv/cv
