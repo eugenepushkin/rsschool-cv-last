@@ -30,3 +30,11 @@ Email: jekapushkin123@gmail.com
 
 
 ---
+
+## Languages:
+
+At the moment I know:
+
+ * Russion
+ * Belarussion
+ * English
