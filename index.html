@@ -4,60 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Yauheni Pushkin</title>
+    <title>CV</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">Zhm</a>
-            <nav class="navigation">
-                <ul class="list">
-                    <li class="item">
-                        <a href="" class="link">
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="link">
-
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="wrapper">
+                <a href="#" class="logo">Zhm</a>
+                <nav class="navigation">
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="nav_about">
+                                About me
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="nav_skills">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="nav_languages">
+                                Languages
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="nav_code">
+                                Code example
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="nav_contacts">
+                                Contact information
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="nav_me">
+                <img src="img/yeD5IKHB0Io.jpg" alt="My photo" class="photo">
+                <h1 class="name">
+                    Yauheni Pushkin
+                </h1>
+            </section>
         </div>
     </header>
     <main class="main">
         <div class="container">
-            <section class="contacts">
-        
-            </section>
             <section class="about">
-        
+                <h2 class="section_title">
+                    About
+                </h2>
+                <p class="information">
+                    My name is Yauheni and I am 21 years old. Now I am a 5th year student at the BNTU Faculty of Information Technology and Robotics. I just recently started my career as a web developer, but I try very hard. I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.
+                </p>
             </section>
             <section class="skills">
-        
+                <h2 class="section_title">
+                    Skills
+                </h2>
+                <ul class="border">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Figma</li>
+                    <li>Zeplin</li>
+                    <li>Photoshop</li>
+                </ul>
             </section>
             <section class="languages">
-        
+                <h2 class="section_title">
+                    Languages:
+                </h2>
+                <ul class="lang">
+                    <li>Russian</li>
+                    <li>Belarussian</li>
+                    <li>English</li>
+                </ul>
             </section>
             <section class="code">
-        
+                <h2 class="section_title">Code example</h2>
+                <pre>
+                    <code class="ex">
+        function solve(input) {
+            let res = new Array();
+            let arrayOfStr = input.split(',');
+            arrayOfStr.sort(function( a, b ) {return a - b});
+            let goal = Array.from(new Set(arrayOfStr));
+                                
+            for(let i = 0; i < goal.length; i++) {
+                if (+goal[i] == +(goal[i-1])+1 && +goal[i] == +(goal[i+1])-1) {
+                    res[i] = '_';
+                } else res[i] = goal[i]
+            };
+                                
+            for (let m = 0; m < res.length; m++) {
+                if (res[m] == res[m-1]) {
+                    res.splice(m, 1);
+                    m--;
+                };
+            };
+                                
+            let finalStr = res.join().replaceAll(',_,', '-');
+                                
+            console.log(finalStr);
+        };
+
+                    </code>
+                </pre>
+            </section>
+            <section class="contacts">
+                <h2 class="section_title">
+                    Contacts:
+                </h2>
+                <ul>
+                    <li>
+                        Tel: +375 (29) 514-24-12
+                    </li>
+                    <li>
+                        Email: jekapushkin123@gmail.com
+                    </li>
+                    <li>
+                        Telegram: @Zhmenya777
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
@@ -70,7 +146,9 @@
                 <p class="created">
                     Created in 2021
                 </p>
-                <img src="" alt="" class="rsschool">
+                <a href="https://rs.school/js/">
+                    <img src="img/rs_school_js.svg" alt="" class="rsschool">
+                </a>
             </section>
         </div>
     </footer>
