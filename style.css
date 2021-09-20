@@ -179,10 +179,40 @@ li {
 .lang li:nth-child(3):hover {border-right: 10px solid #44009c;}
 
 .rsschool {
-    height: 10%;
-    width: 10%;
+    width: 100px;
+}
+
+.contacts {
+    padding-bottom: 80px;
+}
+
+.contacts h2 {
+    padding-bottom: 20px;
+}
+
+.contacts ul{
+    display: flex;
+    justify-content: space-around;
+}   
+
+.footer_section {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_section a {
+    color: white;
+}
+
+.footer_section a:hover {
+    color: wheat;
 }
 
 .footer {
-
+    text-align: center;
+    padding: 20px 0;
+    background-color: #164d7a;
 }
