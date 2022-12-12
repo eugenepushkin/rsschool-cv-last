@@ -1,1 +1,1 @@
-https://eugenepushkin.github.io/rsschool-cv/
+https://eugenepushkin.github.io/rsschool-cv-last/
